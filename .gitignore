@@ -13,5 +13,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 
-dist
 dist-site
