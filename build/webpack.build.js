@@ -15,7 +15,10 @@ module.exports = merge(baseConfig, {
 
     output: {
         filename: 'main.js',
-        path: resolvePath('dist')
+        path: resolvePath('dist'),
+        library: 'vcPortal',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
 
     externals: {
@@ -27,9 +30,9 @@ module.exports = merge(baseConfig, {
         }
     },
 
-    // optimization: {
-    //     minimize: false
-    // },
+    optimization: {
+        minimize: false
+    },
 
     plugins: [
       new CleanWebpackPlugin(['dist'], {
