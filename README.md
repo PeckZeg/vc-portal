@@ -8,7 +8,8 @@
 -------------- | -------------------------- | -------------------------- | ----
 `getContainer` | 获取承载的容器元素         | `Function() : HTMLElement` | -
 `didUpdate`    | 每次更新后的执行的回调函数 | `Function()`               | -
-`targetClass`  | 传送后的目标的样式         | `string\|object\|array`    | -
+`targetClass`  | 传送后的目标的样式         | `string/object/array`      | -
+`provide`      | 向子孙提供一些东西         | `object/function`          | -
 
 ## Slots
 

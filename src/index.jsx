@@ -14,6 +14,7 @@ export default {
 
     didUpdate: Function,
     targetClass: [String, Object, Array],
+    provide: [Object, Function]
   },
 
   data() {
@@ -38,7 +39,7 @@ export default {
 
   methods: {
     createContainer() {
-      const { targetClass, name } = this;
+      const { targetClass, name, provide } = this;
       const el = document.createElement('div');
 
       this._container = this.getContainer();
@@ -48,6 +49,7 @@ export default {
         el,
         ...PortalTarget,
         class: 'test',
+        provide: provide,
         propsData: {
           name,
           attributes: {
